@@ -1,0 +1,37 @@
+{
+"Actor": {
+  "types": ["character"],
+  "htmlFields": ["biography"],
+  "character": {
+    "biography": "",
+    "health": {
+      "value": 60,
+      "min": 0,
+      "max": 60
+    },
+    "mana": {
+      "value": 60,
+      "min": 0,
+      "max": 60
+    },
+    "attributes": {
+      "strength": "",
+      "agility": "",
+      "intelligence": "",
+      "will": ""
+    },
+    "groups": {}
+  }
+},
+"Item": {
+  "types": ["item"],
+  "htmlFields": ["description"],
+  "item": {
+    "description": "",
+    "quantity": 1,
+    "weight": 0,
+    "attributes": {},
+    "groups": {}
+  }
+}
+}

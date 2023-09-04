@@ -1,0 +1,39 @@
+{
+  "id": "mb3",
+  "version": "0.1",
+  "title": "Mighty Blade 3.5e",
+  "url": "",
+  "description": "Adaptação do sistema brasileiro Mighty Blade, na versão 3.5.",
+  "license": "LICENSE.txt",
+  "authors": [
+    {
+      "name": "Tadeu Raphael",
+      "url": "https://github.com/Tadeu-Raphael"
+    }
+  ],
+  "esmodules": ["module/simple.js"],
+  "styles": ["styles/simple.css"],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "pl",
+      "name": "Polski",
+      "path": "lang/pl.json"
+    }
+  ],
+  "compatibility": {
+    "minimum": "10",
+    "verified": "11"
+  },
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "mana",
+  "manifest": "https://raw.githubusercontent.com/foundryvtt/worldbuilding/master/system.json",
+  "download": "https://github.com/foundryvtt/worldbuilding/archive/refs/tags/release-082.zip"
+}
