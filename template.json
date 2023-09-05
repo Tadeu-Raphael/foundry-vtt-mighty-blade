@@ -1,37 +1,117 @@
 {
 "Actor": {
-  "types": ["character"],
+  "types": ["player", "monster"],
   "htmlFields": ["biography"],
-  "character": {
-    "biography": "",
-    "health": {
-      "value": 60,
-      "min": 0,
-      "max": 60
-    },
-    "mana": {
-      "value": 60,
-      "min": 0,
-      "max": 60
-    },
-    "attributes": {
-      "strength": "",
-      "agility": "",
-      "intelligence": "",
-      "will": ""
-    },
-    "groups": {}
+  "templates": {
+      "information": {
+        "name": "",
+        "description": ""
+      },
+      "stats": {
+        "health": {
+          "value": 60,
+          "min": 0,
+          "max": 60
+        },
+        "mana": {
+          "value": 60,
+          "min": 0,
+          "max": 60
+        },
+        "attributes": {
+          "strength": "",
+          "agility": "",
+          "intelligence": "",
+          "will": ""
+        },
+        "defense": {
+            "dodge": {
+              "value": 5,
+              "min": 1,
+              "max" : 5
+            },
+            "block": {
+              "value": 5,
+              "min": 1,
+              "max" : 5
+            },
+            "determination": {
+              "value": 8,
+              "min": 1,
+              "max" : 8
+            }
+        },
+        "movement": {
+          "basic": {
+            "value": 6,
+            "min": 1,
+            "max": 6
+          },
+          "sprint": {
+            "value": 24,
+            "min": 12,
+            "max": 24
+          }
+        }
+      },
+      "extra-stats": {
+        "weight": {
+          "basic": {
+            "value": 0,
+            "min": 0,
+            "max": 0
+          },
+          "heavy": {
+            "value": 0,
+            "min": 0,
+            "max": 0
+          },
+          "maximum": {
+            "value": 0,
+            "min": 0,
+            "max": 0
+          }
+        }
+      }
+      
+  },
+  "player": {
+    "templates": ["information", "stats", "extra-stats"],
+    "player": "",
+    "race": "",
+    "class": "",
+    "subclass": "",
+    "path": "",
+    "age": "",
+    "level": "",
+    "background": "",
+    "experience": "",
+    "motivation": "",
+    "money": 0
+  },
+  "monster": {
+    "templates": ["information", "stats"]
   }
 },
 "Item": {
-  "types": ["item"],
+  "types": ["item", "ability", "weapon", "spell"],
   "htmlFields": ["description"],
   "item": {
     "description": "",
     "quantity": 1,
     "weight": 0,
+    "price": 0,
     "attributes": {},
     "groups": {}
+  },
+  "spell": {
+    "description": ""
+  },
+  "weapon": {
+    "description": ""
+  },
+  "ability": {
+    "description": ""
   }
 }
 }
